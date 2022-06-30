@@ -1,0 +1,66 @@
+html {
+    background-color: #111;
+    color: white;
+
+    font-family: "Roboto";
+    font-size: 14px;
+
+    padding: 7px;
+}
+
+body {
+    width: 300px;
+}
+
+h1 {
+    font-size: 26px;
+    user-select: none;
+}
+
+.toggle {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    user-select: none;
+    cursor: pointer;
+}
+
+.switch {
+    width: 30px;
+    height: 17px;
+
+    margin-right: 5px;
+
+    background: #272727;
+    border-radius: 8.5px;
+
+    display: inline-flex;
+
+    justify-content: left;
+    align-items: center;
+
+    transition: 0.4s;
+}
+
+.toggle-enabled > .switch {
+    background: #114258;
+}
+
+.slider {
+    height: 13px;
+    width: 13px;
+
+    margin: 2px;
+
+    background: #999;
+    border-radius: 6.5px;
+    
+    transition: 0.4s;
+}
+
+.toggle-enabled > .switch > .slider {
+    background: #2998cc;
+
+    margin-left: 15px;
+}

@@ -1,0 +1,35 @@
+{
+  "name": "__MSG_name__",
+  "description": "__MSG_description__",
+  "default_locale": "en",
+  "version": "1.0.0.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "host_permissions": ["*://*.youtube.com/*"],
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://youtube.com/*",
+        "*://www.youtube.com/*",
+        "*://m.youtube.com/*"
+      ],
+      "exclude_matches": ["*://*.music.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "externally_connectable": {
+    "matches": ["*://*.youtube.com/*"]
+  }
+}

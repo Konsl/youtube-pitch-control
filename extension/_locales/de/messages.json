@@ -1,0 +1,11 @@
+{
+    "name": {
+        "message": "YouTube Pitch Control"
+    },
+    "description": {
+        "message": "Verändert das Pitch-Shifting-Verhalten auf YouTube"
+    },
+    "settingstext": {
+        "message": "Deaktiviere Pitch-Shifting"
+    }
+}
